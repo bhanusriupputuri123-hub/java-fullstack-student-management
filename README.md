@@ -17,7 +17,7 @@ Java 25, Spring Boot 3.4.5, Spring Web, Spring Data JPA, Hibernate, MySQL, HTML5
 
 1. Make sure Java 17+, Maven and MySQL are installed.
 2. Open `src/main/resources/application.properties`.
-3. Replace `YOUR_MYSQL_PASSWORD` with your MySQL root password.
+3. Set the `DB_PASSWORD` environment variable to your MySQL root password before running the application.
 4. Run:
    `mvn spring-boot:run`
 5. Open:
