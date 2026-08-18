@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Student Management System</h1>
+    <p>Java Full Stack • Spring Boot • MySQL</p>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <h2 id="formTitle">Add Student</h2>
+    <form id="studentForm">
+      <input type="hidden" id="studentId">
+      <div class="grid">
+        <input id="name" placeholder="Student Name" required>
+        <input id="email" type="email" placeholder="Email" required>
+        <input id="course" placeholder="Course (e.g. B.Tech)" required>
+        <input id="department" placeholder="Department (e.g. CSE)" required>
+        <input id="cgpa" type="number" step="0.01" min="0" max="10" placeholder="CGPA" required>
+      </div>
+      <button type="submit">Save Student</button>
+      <button type="button" class="secondary" onclick="resetForm()">Clear</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <section class="card">
+    <div class="toolbar">
+      <h2>Students</h2>
+      <input id="search" placeholder="Search by name..." oninput="loadStudents()">
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Course</th><th>Department</th><th>CGPA</th><th>Actions</th></tr></thead>
+        <tbody id="studentTable"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
