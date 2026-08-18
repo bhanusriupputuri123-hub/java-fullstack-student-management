@@ -11,7 +11,7 @@ A Java Full Stack CRUD application built using Spring Boot, Spring Data JPA, MyS
 - Responsive frontend served by Spring Boot
 
 ## Tech Stack
-Java 17, Spring Boot, Spring Web, Spring Data JPA, Hibernate, MySQL, HTML5, CSS3, JavaScript, Maven, Git.
+Java 25, Spring Boot 3.4.5, Spring Web, Spring Data JPA, Hibernate, MySQL, HTML5, CSS3, JavaScript, Maven, Git.
 
 ## Run locally
 
